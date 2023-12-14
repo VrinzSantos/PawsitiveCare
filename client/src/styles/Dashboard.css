@@ -1,0 +1,248 @@
+
+.dashboard-container {
+  background-color: #E8F4FE;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.product-item {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.product-item strong {
+  color: #333;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+.container2 {
+    width: 50rem;
+    height: 50rem;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 270px;
+  }
+
+  .container3 {
+    width: 28rem;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container4 {
+    width: 28rem;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 270px;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+
+/* Dashboard.css */
+
+/* Set a global container for the dashboard */
+.dashboard-container {
+  background-color: #E8F4FE;
+  padding: 20px;
+}
+
+/* Set a title style */
+.dashboard-title {
+  margin-top: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #004080; /* Change the color as needed */
+}
+
+/* Set a flex container for the main content */
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* Set a style for individual components */
+.dashboard-component {
+  display: flex;
+  width: 100%; /* Adjust the width as needed */
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+
+.containers {
+  display: flex;
+  justify-content: center;
+  margin-top: 5x;
+  width: 400vh;
+  margin-bottom: 50px;
+}
+
+.sales-today {
+  display: flex;
+  width: 80%;
+  height: 120%;
+  gap: 20px; /* Add spacing between components */
+}
+
+/* Add specific styles for SalesToday component */
+.sales-today .sales-today-content{
+  background-color: #60bd68;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-today .user-product-info{
+  background-color: #004080;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-today .user-info{
+  background-color: #b3c100;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containers1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.chart-container {
+  display: flex;
+}
+
+/* Add specific styles for WeeklySalesChart */
+.weekly-sales-container {
+  flex: 2;
+  margin-right: 30px; /* Adjust the right margin to control spacing */
+}
+
+.weekly-sales-container .chart-content {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add specific styles for FastestSellingProductChart */
+.fastest-selling-container {
+  flex: 1;
+}
+
+
+
+
+
+
+/* Dashboard.css */
+
+.containers2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2000px;
+}
+
+.containers2 .category-sales-container {
+  display: flex;
+  width: 1600px; /* Adjust the width as needed */
+  max-width: 1460px; /* Set a max-width if you want to limit the container width */
+  gap: 20px; /* Add spacing between charts */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containers2 .category-sales-container .larger-chart {
+  flex: 1; /* Take double the width of the other chart */
+  top: 0;
+}
+
+.containers2 .category-sales-container .smaller-chart {
+  flex: 2; /* Take equal width in the container */
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the MonthlySalesChart size in containers2 */
+.containers2 .smaller-chart .container4 {
+  width: 100%;
+  max-width: 600px; /* Set the max-width of the MonthlySalesChart container */
+}
+
+/* Adjust the MonthlySalesChart height in containers2 */
+.containers2 .smaller-chart canvas {
+  width: 90%;
+  height: 400px; /* Set the height of the MonthlySalesChart canvas */
+}
+
+/* Add specific styles for WeeklySalesChart and FastestSellingProductChart components */
+.chart-container {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Add specific styles for ProductCategoryDistributionChart and MonthlySalesChart components */
