@@ -1,0 +1,794 @@
+/* LayoutStyles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.table{
+  width: auto;
+  table-layout: fixed;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .layout {
+    width: 100%;
+    height: 100%;
+    justify-items: center
+  }
+
+  .h1{
+    margin-bottom: 10px 
+  }
+ 
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border-radius: 5px !important; /* Adjust the border-radius as needed */
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    text-decoration: none;
+    border: none; /* Remove any existing border styles */
+    outline: none; /* Remove any existing outline styles */
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+  }
+  
+.hovered-background {
+  background-color: white !important;
+}
+  
+/* ... (your existing styles) */
+
+/* Global Styles */
+.notification-profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  margin-right: 5px;
+}
+
+.notification-profile-container button {
+  margin-right: 70px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.notification-profile-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.notification-profile-container button {
+  margin-left: 5px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .notification-profile-container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+/* Profile Dialog Styles */
+.profile-dialog {
+  position: fixed;
+  margin-top: 187px;
+  margin-right: 32%;
+  right: 0;
+  width: 190px;
+  background-color: #EEEE;
+  padding: 17px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.profile-dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-options button {
+  background-color: none;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-options button {
+  background: none;
+  width: 150px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: background 0.1s ease;
+}
+
+.profile-options button:hover {
+  background: #adb5bd;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  height: 12vh;
+  width: 100%;
+  background-color: #9754cb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between; /* Center the child elements horizontally */
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo-image {
+  display: inline-block;
+  max-height: 100px; /* Adjust the value as needed */
+  padding-left: 10px; /* Adjust padding as needed */
+  margin: auto;
+  color: #fff;
+  display: flex;
+}
+
+.logo-image1 {
+  display: inline-block;
+  max-height: 400px; /* Adjust the value as needed */
+  padding-left: 10px; /* Adjust padding as needed */
+  margin: auto;
+  color: #fff;
+  display: flex;
+}
+
+.icon {
+  margin-left: 10px; /* Added margin for spacing */
+}
+
+.menu {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-item {
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.1s ease-in-out;
+}
+
+.menu-item i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.menu-item:hover a {
+  color: black;
+}
+
+.menu-item i {
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+}
+
+.menu-item:hover i {
+  color: black;
+}
+
+.active a,
+.active i {
+  color: black;
+}
+
+/* Header Styles */
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.header-content i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+}
+
+.header-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+.header-content i:hover {
+  color: black;
+}
+
+.header-content a:hover {
+  color: #fff;
+}
+
+/* Your existing styles ... */
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: calc(50vh - 10vh);
+    background-color: #67508B;
+    display: none;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+
+  .menu-item {
+    margin-right: 0;
+
+  }
+
+  .icon {
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+
+  .menu-open .menu {
+    display: flex;
+  }
+
+  .menu-hidden .menu {
+    display: none;
+  }
+}
+  /* Hide the menu bar button by default */
+  .icon {
+    display: none;
+  }
+  
+  /* Show the icon only on smaller screens */
+  @media screen and (max-width: 768px) {
+    .icon {
+      display: block;
+    }
+  }
+
+
+.form{
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    height: 105vh;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    backdrop-filter: blur (10px);
+    transform: translate(-50%, -50%);
+    padding: 0px 30px;
+}
+
+.form1{
+  margin-top: 50px;
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  backdrop-filter: blur (10px);
+  transform: translate(-50%, -50%);
+  padding: 0px 30px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+}
+
+.space-y-1{
+  margin-top: 0.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+.mb-4{
+  margin-top: 30px;
+}
+
+
+.container{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*Doctor Profile*/
+.form2{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 560px;
+  width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 0px 30px;
+}
+
+
+/*Create Feedback*/
+
+
+/*ApplyMembership*/
+.container1{
+  height: 105%;
+  width: 700px;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+  backdrop-filter: blur (10px);
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  padding: 0px 10px;
+}
+
+.container1 label{
+  font-size: small;
+  font-weight:500;
+}
+
+.container1 input{
+  font-size: small;
+  border: 2px solid black;
+}
+
+.img{
+  background: no-repeat;
+}
+
+
+
+
+
+/*Appointment List*/
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+  .ml-10,
+  .mr-10 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .mt-24 {
+    margin-top: 16px;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .bg-primary,
+  .bg-warning {
+    width: 100%; /* Make buttons full width on mobile */
+  }
+}
+
+
+
+/*Membership*/
+
+@media screen and (max-width: 767px) {
+  .container1 {
+    padding: 0 10px; /* Adjust the padding as needed */
+  }
+
+  .grid-cols-1,
+  .grid-cols-2,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 1024px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*Feedback*/
+
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+
+  .mt-24 {
+      margin-top: 16px;
+  }
+
+  .text-3xl {
+      font-size: 1.875rem;
+  }
+}
+
+/*HomePage*/
+
+@media screen and (max-width: 767px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+  header.carousel-caption {
+    text-align: center;
+  }
+
+  .container5,
+  .container6,
+  section {
+    padding: 20px;
+  }
+
+  footer.footer-distributed {
+    text-align: center;
+  }
+
+  .footer-right,
+  .footer-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.service-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+
+.testimonial-card {
+  transition: background-color 0.1s ease;
+  border: 1px solid white; /* Add border for a cleaner look */
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.07);
+
+}
+
+#about,
+#services {
+  padding: 2em;
+}
+
+
+.layout footer {
+  background-color: #333;
+  margin: auto;
+  color: white; 
+  bottom: 0;
+  width: 100%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  margin-right: 20px;
+  z-index: 11;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+.h5{
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+.layout a{
+  border-radius: 50%;
+}
+
+.layout .container5{
+  background-color: #fff;
+}
+
+.layout .container6{
+  background-color: #fff;
+}
+
+.layout .link{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+}
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/* Add these styles to your existing CSS or create a new stylesheet */
+
+.custom-dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: #fff; /* Background color of the dropdown menu */
+  border: 1px solid #ccc; /* Border color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  margin-left: -100px;
+}
+
+.dropdown-menu-item {
+  padding: 8px 12px; /* Adjust padding as needed */
+  color: #333; /* Text color */
+  margin-left: 20px;
+}
+
+.dropdown-menu-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+.dropdown-icon {
+  margin-right: 10px; /* Adjust margin as needed */
+  margin-left: -140px; /* Move the icon to the left */
+}
+
